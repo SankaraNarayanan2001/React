@@ -27,6 +27,12 @@ function RouteComponent() {
           >
             Explore Posts
           </a>
+          <a
+            href="/user"
+            className="px-6 py-2 text-white bg-red-600 rounded-lg hover:bg-red-700 transition"
+          >
+           Explore Users
+          </a>
         </div>
       </div>
     </div>
