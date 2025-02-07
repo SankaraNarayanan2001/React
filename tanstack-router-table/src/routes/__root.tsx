@@ -21,6 +21,7 @@ function RootComponent() {
                 <Link to="/" activeProps={activeProps} className="rounded-md  px-3 py-2 text-sm font-medium text-white text-gray-300 hover:bg-blue-700 hover:text-white">Home</Link>
                 <Link to="/profile" activeProps={activeProps} className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-blue-700 hover:text-white">Profile</Link>
                 <Link to="/post" activeProps={activeProps} className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-blue-700 hover:text-white">Post</Link>
+                <Link to="/user" activeProps={activeProps} className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-blue-700 hover:text-white">User</Link>
                 </div>
               </div>
             </div>

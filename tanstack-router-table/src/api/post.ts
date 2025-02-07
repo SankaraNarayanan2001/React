@@ -1,3 +1,5 @@
+import  axios  from "axios";
+
 type PostDetail = {
     userId: number;
     id:number;
@@ -15,6 +17,11 @@ export async function getPost({params: {id}}: {params: {id: number}}): Promise<P
 // }
 
 export async function getPostList(): Promise<PostDetail> {
-    const response = await fetch(`https://jsonplaceholder.typicode.com/posts`);
-    return await response.json();
+    const response = await axios.get(`https://jsonplaceholder.typicode.com/posts`);
+    return await response.data;
+}
+
+export async function userList(): Promise<PostDetail> {
+    const response = await axios.get(`https://jsonplaceholder.typicode.com/users`);
+    return await response.data;
 }
